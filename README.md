@@ -1,4 +1,4 @@
-### Installation and Running Directions
+### Installation and Running Direction
 Follow the below directions to get this repo up and running with a local Gatsby website.
 
 #### Step 1: Checkout this repo
