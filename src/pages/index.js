@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="An Anthology of Adam Driver Movies">
+    <Layout pageTitle="An Anthology of Adam Driver Movies Test">
     <div>
       <p>Explore {" "} <Link to="/movies">Adam Driver Movies</Link>, {" "}</p>
       {/* This is my one and only Static Image */}
