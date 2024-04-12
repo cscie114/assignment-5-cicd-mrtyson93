@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import Movie from '../../components/movie'
 
 
-const MoviePage = ({ pageContext, data }) => {
+const MoviePage = ({ data }) => {
     // Getting movie data from graphQL query, only one returned, so accessing 0 index
     const movie = data.allMovie.nodes[0];
 
