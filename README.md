@@ -36,4 +36,4 @@ Start the website locally by running the following command in the root directory
  
  ```netlify dev```
 
-You should now be able to access the website locally at [http://localhost:8000/](http://localhost:8888/)
+You should now be able to access the website locally at [http://localhost:8888/](http://localhost:8888/)
