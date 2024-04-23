@@ -15,7 +15,7 @@ My favorite is by running the following command:
 - Create a file called ```.env``` in the root directory of this project. 
 - Create an api key for the omdbapi at this [link](http://www.omdbapi.com/apikey.aspx)
 - In the .env file, add one line that is ```MOVIE_API_KEY="<your_key>"``` where ```<your_key>``` is the key you just created from the above link
-- Create an api key for the weather api at this [link](https://openweathermap.org/api). Note: This API Key takes a couple hours to activate after creating.
+- Create an api key for the weather api at this [link](https://openweathermap.org/api). Note: This API Key can take several hours to activate after creating.
 - In the .env file, add another line that is ```WEATHER_API_KEY="<your_key>"``` where ```<your_key>``` is the key you just created from the above link
 
 #### Step 3: Install local requirements
