@@ -4,7 +4,7 @@ const handler = async function (event, context) {
     const key = process.env.WEATHER_API_KEY;
     
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=42.3601&lon=71.0589&appid=${key}`, {
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Boston,usa&units=imperial&appid=${key}`, {
         headers: { 
           Accept: 'application/json',
       },

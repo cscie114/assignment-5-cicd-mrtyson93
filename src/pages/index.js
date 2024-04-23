@@ -9,7 +9,7 @@ const IndexPage = () => {
   // Calling serverless function
   const [weatherData, setWeatherData] = useState({});
   useEffect(() => {
-    fetch("/.netlify/functions/movienetlify", {
+    fetch("/.netlify/functions/weather", {
       method: "GET",
     })
     .then((result) => {
@@ -26,13 +26,9 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="An Anthology of Adam Driver Movies">
     <div>
-      <h4>Boston, MA Weather:</h4>
-        <ul>
-        {
-          Object.entries(weatherData).map(([key, value]) => {
-            return <li key={key}><b>{key}: </b>{value.toString()}</li>  
-          })
-        }</ul>
+      <h4>{weatherData.name} Weather:</h4>
+      <p><b>Temperature:</b> {weatherData.main?.temp}<span>&#8457;</span>  <b>Feels Like:</b> {weatherData.main?.feels_like}<span>&#8457;</span>  </p>
+      <p><b>Max:</b> {weatherData.main?.temp_max}<span>&#8457;</span>  <b>Min:</b> {weatherData.main?.temp_min}<span>&#8457;</span></p>
         
     </div>
     <div>
