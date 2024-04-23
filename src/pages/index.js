@@ -26,22 +26,20 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="An Anthology of Adam Driver Movies">
     <div>
+      <h4>Boston, MA Weather:</h4>
+        <ul>
+        {
+          Object.entries(weatherData).map(([key, value]) => {
+            return <li key={key}><b>{key}: </b>{value.toString()}</li>  
+          })
+        }</ul>
+        
+    </div>
+    <div>
       <p>Explore {" "} <Link to="/movies">Adam Driver Movies</Link> {" "}</p>
       {/* This is my one and only Static Image */}
       <StaticImage src="../images/driverhome.jpg" height={600} alt="Adam Driver SNL Thumbs Up"></StaticImage>
     </div>
-
-    <div>
-        <h3>Cloud Atlas IMDB API Call</h3>
-        <p>Building on the Atlas metaphor: Serverless Functions</p>
-          <ul>
-          {
-            Object.entries(weatherData).map(([key, value]) => {
-              return <li key={key}><b>{key}: </b>{value.toString()}</li>  
-            })
-          }</ul>
-          
-      </div>
   </Layout>
   )
 }
