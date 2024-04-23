@@ -49,7 +49,7 @@ const Layout = (props) => {
                 {children}
             </main>
             <footer className={footer}>
-                Developed by Mitchell Tyson, Assignment 4, for CSCI E-114, Spring 2024.
+                Developed by Mitchell Tyson, Assignment 5, for CSCI E-114, Spring 2024.
             </footer>
         </div>
     )

@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Assignment 4 - Mitchell Tyson`,
+    title: `Assignment 5 - Mitchell Tyson - CI/CD`,
     description: `An Anthology of Adam Driver Movies`,
     course: `CSCI E-114`,
     siteUrl: `http://localhost:8000`,
