@@ -2,6 +2,8 @@ name: Build and Deploy to Netlify
 run-name: ${{ github.actor }} is building and deploying out Github Actions
 env:
   MOVIE_API_KEY: ${{ secrets.MOVIE_API_KEY }}
+  WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+
 on:
   push:
     branches: [ "main" ]
@@ -64,4 +66,9 @@ jobs:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       timeout-minutes: 1
+    - name: Install Netlify CLI
+      run: npm install -g netlify-cli
+    - name: Deploy to Netlify using CLI
+      run: netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod
+
     - run: echo "This job's status is ${{ job.status }}."
