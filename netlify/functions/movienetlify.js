@@ -1,10 +1,10 @@
 const fetch = require('node-fetch')
 
 const handler = async function (event, context) {
-    const key = process.env.WEATHER_API_KEY;
+    const key = process.env.MOVIE_API_KEY;
     
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=42.3601&lon=71.0589&appid=${key}`, {
+      const response = await fetch(`http://www.omdbapi.com/?apikey=${key}&i=tt1371111`, {
         headers: { 
           Accept: 'application/json',
       },
